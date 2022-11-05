@@ -12,6 +12,8 @@ public class Main {
         // numbers[0] = 10;
         // numbers[0] = 20;
         // numbers[0] = 30;
+        numbers.insert(50);
+        numbers.removeAt(30);
         System.out.println(Arrays.toString(numbers))
     }
 }
@@ -41,6 +43,18 @@ public class Array {
         items[count++] = item;
     }
 
+    public void removeAt(int index) {
+        // validate the index
+        if (index < 0 || index >= count) {
+            throw new IllegalArguementException();
+        }
+        // shift the items to the left to fill the whole
+        for (int i = index; i < count; i++) {
+            items[i] = items[i + 1];
+        }
+
+        count--;
+    }
 
     public void print() {
         for (int i = 0; i < count.length; i++) {
