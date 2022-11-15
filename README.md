@@ -1,3 +1,5 @@
+🚀🚀🚀 This repo is where I started learning about data structures and algorithms using Java. Right now, it's uncomplete. I've been jumping around with Javascript, Python, and Java. 🚀🚀🚀
+
 # data-structures-and-algorithms
 
 Arrays are used to store a list of items like strings, numbers, objects, etc. .
